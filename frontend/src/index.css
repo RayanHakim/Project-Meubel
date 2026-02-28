@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Memastikan background utama adalah abu-abu sangat muda (slate-50) */
+  background-color: #f8fafc; 
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  /* Kita hapus display: flex agar konten tidak terjepit di kiri */
+  display: block; 
+  width: 100%;
+  min-height: 100vh;
+  /* Memastikan tidak ada scroll horizontal yang tidak perlu */
+  overflow-x: hidden; 
+}
+
+/* Memastikan root element Vite/React juga mengisi seluruh lebar */
+#root {
+  width: 100%;
+}
